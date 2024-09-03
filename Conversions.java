@@ -81,7 +81,7 @@ public class Conversions
             System.out.println("Enter Inches");
             double inches = keyboard.nextDouble();
             keyboard.nextLine();
-            double centimeters = inches / 2.54;
+            double centimeters = inches * 2.54;
             System.out.println(inches + " inches is " + centimeters + " centimeters");
         }
         if (selection == 8)
@@ -89,7 +89,7 @@ public class Conversions
             System.out.println("Enter Centimeters");
             double centimeters = keyboard.nextDouble();
             keyboard.nextLine();
-            double inches = centimeters * 2.54;
+            double inches = centimeters / 2.54;
             System.out.println(centimeters + " centimeters is " + inches + " inches");
         }
         if (selection == 9)
@@ -97,7 +97,7 @@ public class Conversions
             System.out.println("Enter Liters");
             double liters = keyboard.nextDouble();
             keyboard.nextLine();
-            double gallons = liters / 0.264172;
+            double gallons = liters * 0.264172;
             System.out.println(liters + " liters is " + gallons + " gallons");
         }
         if (selection == 10)
@@ -105,7 +105,7 @@ public class Conversions
             System.out.println("Enter Gallons");
             double gallons = keyboard.nextDouble();
             keyboard.nextLine();
-            double liters = gallons * 0.264172;
+            double liters = gallons / 0.264172;
             System.out.println(gallons + " gallons is " + liters + " liters");
         }
     }
